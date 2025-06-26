@@ -28,6 +28,7 @@ fn main() {
         pre_position = new_position;
 //        std::thread::sleep(std::time::Duration::from_millis(100));
     }
+    rag.save_screenshot("screenshot.png").unwrap();
     let found = rag.find_image_on_screen(0.9);
     println!("Found: {:?}", found);
 }
